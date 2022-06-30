@@ -62,6 +62,30 @@ void setStudy() {
   print(set4);
 }
 
+void mapStudy() {
+  var map1 = <String, String>{
+    // key: value
+    'name': '张三',
+    'age': '12'
+  };
+  print(map1['name']);
+  // map中不存在的值，返回一个null，取值和添加新的key,value和js一样
+  print(map1['notFound']);
+
+  // 获取键值对的数量
+  print(map1.length);
+
+  // 同样可以声明常量，将无法再添加新的键值对
+  const map2 = <String, int>{'age': 12};
+  print(map2);
+
+  var map3 = <String, String>{
+    ...map1,
+    if (map1.length >= 2) 'hieght': '198cm'
+  };
+  print(map3);
+}
+
 void main() {
   final number = 43;
 
@@ -71,5 +95,6 @@ void main() {
   // typeConversion();
   // printInteger(number);
   // listStudy();
-  setStudy();
+  // setStudy();
+  mapStudy();
 }
