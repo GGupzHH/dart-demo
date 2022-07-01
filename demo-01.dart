@@ -1,4 +1,5 @@
 import 'dart:ffi';
+import 'package:characters/characters.dart';
 
 void printInteger(int aNumber) {
   print('The umber is $aNumber');
@@ -79,13 +80,13 @@ void mapStudy() {
   const map2 = <String, int>{'age': 12};
   print(map2);
 
-  var map3 = <String, String>{
-    ...map1,
-    if (map1.length >= 2) 'hieght': '198cm'
-  };
+  var map3 = <String, String>{...map1, if (map1.length >= 2) 'hieght': '198cm'};
   print(map3);
 }
 
+void unicodeStudy() {
+
+}
 void main() {
   final number = 43;
 
