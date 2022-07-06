@@ -1,5 +1,4 @@
 import 'dart:ffi';
-import 'package:characters/characters.dart';
 
 void printInteger(int aNumber) {
   print('The umber is $aNumber');
